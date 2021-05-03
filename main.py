@@ -64,8 +64,9 @@ clear()
 ## Login ##
 login()
 while True:
+    clear()
     try:
-        sysput = input("""
+        sysput = int(input("""
 Welcome to Snek OS! Your options are listed below!
 
 1 - InterWebz
@@ -73,10 +74,27 @@ Welcome to Snek OS! Your options are listed below!
 3 - Dad Joke
 4 - Diagnose Computer
 5 - Not a virus.exe
-6 - To be continued
-""")
+6 - Die
+"""))
     except ValueError:
         clear()
         continue
     if sysput == 1:
-        pass
+        clear()
+        continue
+    elif sysput == 2:
+        clear()
+        continue
+    elif sysput == 3:
+        clear()
+        continue
+    elif sysput == 4:
+        clear()
+        continue
+    elif sysput == 5:
+        clear()
+        continue
+    elif sysput == 6:
+        clear()
+        input("You are now dead. Congradulations! Now what...")
+        continue
