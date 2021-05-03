@@ -75,15 +75,57 @@ Welcome to Snek OS! Your options are listed below!
 4 - Diagnose Computer
 5 - Not a virus.exe
 6 - Die
+
 """))
     except ValueError:
         clear()
         continue
-    if sysput == 1:
+    if sysput == 1: # InterWebz
         clear()
         continue
-    elif sysput == 2:
-        clear()
+    elif sysput == 2: # Steam
+        while True:
+            clear()
+            try:
+                steamput = int(input("""
+Welcome to steam by valve! How may we crash your computer today?
+1 - Dos Box
+2 - Half Life 3
+3 - CS:GO
+
+9 - Back
+"""))
+            except ValueError:
+                continue
+            if steamput == 1: # Steam/Dosbox
+                clear()
+                input("Compatability error! Please downgrade to Snek ME!")
+                continue
+            elif steamput == 2: # Steam/HL3
+                clear()
+                input("""
+Your pre-order has been accepted! Please proceed to wait 10,000 years until release. Thank you!
+""")
+                continue
+            elif steamput == 3: #Steam/CS:GO
+                clear()
+                for i in progressbar(range(10), "Connecting to CS:GO", 40):
+                    time.sleep(.1)
+                input("""
+Your account has been closed.
+
+Time: 49.9 years
+Reason: Cheating
+Moderator: VAC
+Time in game: 0.01
+
+If you feel like this is a false ban, please don't bother contacting support. We don't care!
+""")
+                continue
+            elif steamput == 9:
+                break
+            else:
+                continue
         continue
     elif sysput == 3:
         clear()
